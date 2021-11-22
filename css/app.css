@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Avenir';
+  font-display: swap;
+  src: url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-display: swap;
+  src: url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-display: swap;
+  src: url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-display: swap;
+  src: url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #FAB101;
+  --dark-blue: #000748;
+  --black: #000000;
+  --padding: 90px;
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --padding: 20px;
+  }
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+  color: var(--black);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.h1 {
+  font-weight: 750;
+  font-size: 50px;
+  color: var(--dark-blue);
+}
+
+.btn {
+  background-color: var(--accent);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  padding: 20px 48px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.section {
+  position: relative;
+}
+.hero {
+  height: 100vh;
+}
+.hero__container {
+  padding-right: 0px;
+  height: 100%;
+}
+.hero__content {
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 160px;
+  overflow: hidden;
+}
+.hero-content__left {
+  /* max-width: 634px; */
+  flex: 1 0 43%;
+}
+
+.hero-content__right {
+  /* max-width: 1230px; */
+  flex: 0 1 57%;
+}
+
+.hero__desc {
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 24px;
+  color: var(--dark-blue);
+}
+
+
+.hero__btn {
+  margin-top: 56px;
+}
+
+.hero-content__bg {
+  background-color: var(--accent);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 28vw;
+}
+.hero-content__img-wrapper {
+  position: relative;
+  z-index: 2;
+  right: calc(16vw - 160px);
+  width: 64vw;
+}
+
+.hero-content__img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
